@@ -7,20 +7,29 @@
           v-for="(objMenu, i) in menuHeader"
           :key="i"
         >
-          <a
-            v-if="(objMenu[i] == 0)"
-            href="#"
-          >
-            {{ objMenu.toUpperCase() }}</a>
+          <a>{{ objMenu.toUpperCase() }}</a>
         </li>
       </ul>
       <div class="btns">
         <div class="btn cart">
-          CART
+          <img
+            src="@/svg/svg-1.svg"
+            alt=""
+          >
+          <span>CART</span>
         </div>
         <div class="btn search">
-          SEARCH
+          <font-awesome-icon
+            class="search-icon"
+            icon="fa-solid fa-magnifying-glass"
+          />
+          <span>SEARCH</span>
         </div>
+        <img
+          class="logo"
+          src="@/img/h5-logo-divided-header.png"
+          alt=""
+        >
       </div>
     </div>
   </header>
@@ -47,15 +56,15 @@ export default {
 <style lang="scss" scoped>
   header {
     background-image: url('@/img/background-header.png');
-    padding-bottom: 25rem;
+    padding: 2.5rem 0 25rem;
   }
   .navbar {
     max-width: 900px;
     margin: 0 auto;
-    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     font-size: .7rem;
+    position: relative;
   }
 
   button {
@@ -64,6 +73,7 @@ export default {
     border: none;
     padding: .7rem 1.5rem;
     font-size: .7rem;
+    cursor: pointer;
   }
 
   ul {
@@ -73,13 +83,14 @@ export default {
   li {
     list-style: none;
     margin: 10px;
+    cursor: pointer;
   }
 
   li:nth-child(3) {
-    margin-right: 5rem;
+    margin-right: 6rem;
   }
   li:nth-child(4) {
-    margin-left: 5rem;
+    margin-left: 6rem;
   }
 
   a {
@@ -87,9 +98,44 @@ export default {
     color: #ffffff;
   }
 
+  li:hover a {
+    color: #888888;
+  }
+
   .btns {
     display: flex;
     align-items: center;
+    gap: 1.5rem;
     color: #ffffff;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  span {
+    margin-left: 3px;
+  }
+  .btn:hover span{
+    color: #888888;
+  }
+
+  .btn img {
+    width: 20px;
+    vertical-align: middle;
+    color: #ffffff;
+    fill: currentColor;
+  }
+
+  .search-icon {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 130px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 </style>
