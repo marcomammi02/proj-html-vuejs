@@ -9,6 +9,11 @@
         >
           <a>{{ objMenu.toUpperCase() }}</a>
         </li>
+        <img
+          class="moustache"
+          src="@/svg/svg-0.svg"
+          alt=""
+        >
       </ul>
       <div class="btns">
         <div class="btn cart">
@@ -76,8 +81,22 @@ export default {
     cursor: pointer;
   }
 
+  button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: .5s;
+  }
+
   ul {
     display: flex;
+    position: relative;
+  }
+
+  .moustache {
+    position: absolute;
+    width: 15px;
+    top: 35%;
+    left: -2%;
   }
 
   li {
@@ -123,8 +142,6 @@ export default {
   .btn img {
     width: 20px;
     vertical-align: middle;
-    color: #ffffff;
-    fill: currentColor;
   }
 
   .search-icon {
