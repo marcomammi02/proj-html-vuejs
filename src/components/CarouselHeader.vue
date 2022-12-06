@@ -120,19 +120,21 @@ export default {
   .btn {
     background-color: #ffffff;
     color: #d2401e;
-    border-radius: 50%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
     font-size: .8rem;
-    padding: .7rem 1rem 2.3rem;
+    padding: .5rem .8rem 0;
+    margin: 0;
     cursor: pointer;
   }
 
   .btn-next {
     transform: rotate(-90deg);
-    margin-right: -30px;
+    margin-right: -15px;
   }
 
   .btn-prev {
     transform: rotate(90deg);
-    margin-left: -30px;
+    margin-left: -15px;
   }
 </style>

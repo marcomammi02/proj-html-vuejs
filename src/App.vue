@@ -11,6 +11,7 @@ export default {
   name: 'App',
   components: {
     HeaderPage,
+
   },
 };
 </script>
@@ -25,5 +26,4 @@ export default {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
   }
-
 </style>
