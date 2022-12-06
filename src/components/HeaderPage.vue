@@ -7,13 +7,14 @@
           v-for="(objMenu, i) in menuHeader"
           :key="i"
         >
+          <img
+            v-if="(i == 0)"
+            class="moustache"
+            src="@/svg/svg-0.svg"
+            alt=""
+          >
           <a>{{ objMenu.toUpperCase() }}</a>
         </li>
-        <img
-          class="moustache"
-          src="@/svg/svg-0.svg"
-          alt=""
-        >
       </ul>
       <div class="btns">
         <div class="btn cart">
@@ -93,10 +94,8 @@ export default {
   }
 
   .moustache {
-    position: absolute;
     width: 15px;
-    top: 35%;
-    left: -2%;
+    margin-right: 3px;
   }
 
   li {
@@ -117,8 +116,8 @@ export default {
     color: #ffffff;
   }
 
-  li:hover a {
-    color: #888888;
+  li:hover {
+    filter: brightness(50%);
   }
 
   .btns {
@@ -135,8 +134,8 @@ export default {
   span {
     margin-left: 3px;
   }
-  .btn:hover span{
-    color: #888888;
+  .btn:hover {
+    filter: brightness(50%);
   }
 
   .btn img {
