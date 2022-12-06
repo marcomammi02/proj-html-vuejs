@@ -22,6 +22,9 @@
             src="@/svg/svg-1.svg"
             alt=""
           >
+          <div class="cart-number">
+            0
+          </div>
           <span>CART</span>
         </div>
         <div class="btn search">
@@ -38,12 +41,18 @@
         >
       </div>
     </div>
+    <CarouselHeader />
   </header>
 </template>
 
 <script>
+import CarouselHeader from '@/components/CarouselHeader.vue';
+
 export default {
   name: 'HeaderPage',
+  components: {
+    CarouselHeader,
+  },
   data() {
     return {
       menuHeader: [
@@ -62,7 +71,7 @@ export default {
 <style lang="scss" scoped>
   header {
     background-image: url('@/img/background-header.png');
-    padding: 2.5rem 0 25rem;
+    padding: 2.5rem 0 1.5rem;
   }
   .navbar {
     max-width: 900px;
@@ -129,6 +138,21 @@ export default {
 
   .btn {
     cursor: pointer;
+  }
+
+  .cart {
+    position: relative;
+  }
+
+  .cart-number {
+    color: #d2401e;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: .6rem;
+    padding: 0 4px;
+    position: absolute;
+    top: -3px;
+    left: -5px;
   }
 
   span {
