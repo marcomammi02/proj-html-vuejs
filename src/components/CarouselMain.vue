@@ -160,6 +160,7 @@ export default {
   .btn {
     background-color: #ffffff;
     color: #d2401e;
+    font-weight: bold;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     font-size: .8rem;
