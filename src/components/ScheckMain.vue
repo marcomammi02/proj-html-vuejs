@@ -24,7 +24,6 @@ export default {
 
 <style lang="scss" scoped>
   .scheck-container {
-    height: 250px;
     padding: .5rem 0;
     display: flex;
     justify-content: space-between;
