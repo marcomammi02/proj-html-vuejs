@@ -7,10 +7,12 @@ import {
   faInstagram, faTwitter, faFacebookF,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import VueCarousel from 'vue-carousel';
 import App from './App.vue';
 
 library.add(faMagnifyingGlass, faQuoteLeft, faInstagram, faTwitter, faFacebookF);
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
+Vue.use(VueCarousel);
 
 Vue.config.productionTip = false;
 

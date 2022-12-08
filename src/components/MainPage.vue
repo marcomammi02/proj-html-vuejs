@@ -6,6 +6,7 @@
     <BuildYourPizzaMain />
     <TeamMain />
     <SponsorsMain />
+    <PizzaMenuMain />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import SpecialsMain from '@/components/SpecialsMain.vue';
 import BuildYourPizzaMain from '@/components/BuildYourPizzaMain.vue';
 import TeamMain from '@/components/TeamMain.vue';
 import SponsorsMain from '@/components/SponsorsMain.vue';
+import PizzaMenuMain from '@/components/PizzaMenuMain.vue';
 
 export default {
   name: 'MainPage',
@@ -26,6 +28,7 @@ export default {
     BuildYourPizzaMain,
     TeamMain,
     SponsorsMain,
+    PizzaMenuMain,
   },
 };
 </script>
