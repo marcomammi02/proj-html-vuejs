@@ -48,12 +48,12 @@ export default {
         {
           name: 'Frank Bailay',
           role: 'Co-founder / Cook',
-          img: 'h1-team-3a.jpg',
+          img: 'h1-team-4a.jpg',
         },
         {
           name: 'Rita Margherita',
           role: 'Waitress',
-          img: 'h1-team-4a.jpg',
+          img: 'h1-team-3a.jpg',
         },
       ],
     };
@@ -92,6 +92,7 @@ export default {
     gap: .5rem;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
   .name {
