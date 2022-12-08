@@ -1,10 +1,15 @@
 import Vue from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faMagnifyingGlass, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+  faMagnifyingGlass, faQuoteLeft,
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faInstagram, faTwitter, faFacebookF,
+} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
 
-library.add(faMagnifyingGlass, faQuoteLeft);
+library.add(faMagnifyingGlass, faQuoteLeft, faInstagram, faTwitter, faFacebookF);
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
 
 Vue.config.productionTip = false;
