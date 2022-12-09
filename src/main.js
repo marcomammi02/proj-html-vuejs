@@ -10,11 +10,26 @@ import {
   faTwitter,
   faFacebookF,
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faUser,
+  faCalendar,
+  faClock,
+} from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import VueCarousel from 'vue-carousel';
 import App from './App.vue';
 
-library.add(faMagnifyingGlass, faQuoteLeft, faInstagram, faTwitter, faFacebookF, faLocationDot);
+library.add(
+  faMagnifyingGlass,
+  faQuoteLeft,
+  faInstagram,
+  faTwitter,
+  faFacebookF,
+  faLocationDot,
+  faUser,
+  faCalendar,
+  faClock,
+);
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
 Vue.use(VueCarousel);
 

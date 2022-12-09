@@ -8,6 +8,7 @@
     <SponsorsMain />
     <PizzaMenuMain />
     <DelishPizzaMain />
+    <FormMain />
   </main>
 </template>
 
@@ -20,6 +21,7 @@ import TeamMain from '@/components/TeamMain.vue';
 import SponsorsMain from '@/components/SponsorsMain.vue';
 import PizzaMenuMain from '@/components/PizzaMenuMain.vue';
 import DelishPizzaMain from '@/components/DelishPizzaMain.vue';
+import FormMain from '@/components/FormMain.vue';
 
 export default {
   name: 'MainPage',
@@ -32,6 +34,7 @@ export default {
     SponsorsMain,
     PizzaMenuMain,
     DelishPizzaMain,
+    FormMain,
   },
 };
 </script>

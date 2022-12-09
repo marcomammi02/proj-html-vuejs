@@ -95,7 +95,7 @@ export default {
 
     .title {
         color: #ffffff;
-        margin: .3rem 0 0;
+        margin: .5rem 0 0;
     }
 
     li {
@@ -103,7 +103,7 @@ export default {
         color: #ffffff;
         display: flex;
         align-items: flex-start;
-        padding: 2rem 0;
+        padding: 2.5rem 0;
         border-bottom: 1px dotted #b7903c;
     }
 
