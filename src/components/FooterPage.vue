@@ -65,12 +65,18 @@
       >
     </div>
     <div class="img-box" />
+    <PizzaSliceIcon class="pizza-slice-icon" />
   </footer>
 </template>
 
 <script>
+import PizzaSliceIcon from '@/components/PizzaSliceIcon.vue';
+
 export default {
   name: 'FooterPage',
+  components: {
+    PizzaSliceIcon,
+  },
   props: {
     arrRestaurant: Array,
   },
@@ -81,6 +87,7 @@ export default {
   footer {
     display: flex;
     height: 475px;
+    position: relative;
   }
 
   .list-box {
@@ -171,5 +178,11 @@ export default {
 
   .img-box img {
     width: 100%;
+  }
+
+  .pizza-slice-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
   }
 </style>

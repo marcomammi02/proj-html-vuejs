@@ -25,13 +25,18 @@
         </div>
       </div>
     </div>
+    <PizzaSliceIcon class="pizza-slice-icon" />
   </div>
 </template>
 
 <script>
+import PizzaSliceIcon from '@/components/PizzaSliceIcon.vue';
 
 export default {
   name: 'TeamMain',
+  components: {
+    PizzaSliceIcon,
+  },
   data() {
     return {
       arrTeam: [
@@ -65,6 +70,7 @@ export default {
   .cards-container {
     display: flex;
     padding: .5rem 0;
+    position: relative;
   }
 
   .card {
@@ -113,4 +119,9 @@ export default {
     display: flex;
   }
 
+  .pizza-slice-icon {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+  }
 </style>

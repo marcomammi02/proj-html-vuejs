@@ -44,12 +44,18 @@
         PREV
       </div>
     </div>
+    <PizzaSliceIcon class="pizza-slice-icon" />
   </div>
 </template>
 
 <script>
+import PizzaSliceIcon from '@/components/PizzaSliceIcon.vue';
+
 export default {
   name: 'CarouselMain',
+  components: {
+    PizzaSliceIcon,
+  },
   data() {
     return {
       arrText: [
@@ -177,5 +183,11 @@ export default {
   .btn-prev {
     transform: rotate(90deg);
     margin-left: -15px;
+  }
+
+  .pizza-slice-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
   }
 </style>

@@ -43,12 +43,18 @@
         </ul>
       </div>
     </div>
+    <PizzaSliceIcon class="pizza-slice-icon" />
   </div>
 </template>
 
 <script>
+import PizzaSliceIcon from '@/components/PizzaSliceIcon.vue';
+
 export default {
   name: 'SpecialsMain',
+  components: {
+    PizzaSliceIcon,
+  },
 };
 </script>
 
@@ -56,6 +62,7 @@ export default {
   .specials-container {
     display: flex;
     padding: .5rem 0 .2rem;
+    position: relative;
   }
 
   .img-box {
@@ -109,5 +116,11 @@ export default {
 
   .description {
     margin-left: 2rem;
+  }
+
+  .pizza-slice-icon {
+    position: absolute;
+    top: 65%;
+    right: 1rem;
   }
 </style>

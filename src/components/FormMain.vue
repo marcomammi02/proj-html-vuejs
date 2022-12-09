@@ -84,6 +84,7 @@ export default {
     background-color: #d2401e;
     color: #ffffff;
     margin-left: 3rem;
+    cursor: pointer;
   }
 
   input:focus {

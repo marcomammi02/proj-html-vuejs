@@ -63,16 +63,24 @@
     </div>
     <div class="img-box">
       <img
+        class="img"
         src="@/img/h3-img-5a.jpg"
         alt=""
       >
+      <PizzaSliceIcon class="pizza-slice-icon" />
+      <PizzaSliceIcon class="pizza-slice-icon-two" />
     </div>
   </div>
 </template>
 
 <script>
+import PizzaSliceIcon from '@/components/PizzaSliceIcon.vue';
+
 export default {
   name: 'DelishPizzaMain',
+  components: {
+    PizzaSliceIcon,
+  },
 };
 </script>
 
@@ -135,10 +143,23 @@ export default {
 
     .img-box {
         width: 50%;
+        position: relative;
     }
 
-    .img-box img {
+    .img-box .img {
         width: 100%;
+    }
+
+    .pizza-slice-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .pizza-slice-icon-two {
+      position: absolute;
+      bottom: 9rem;
+      right: 1rem;
     }
 
 </style>

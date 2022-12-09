@@ -38,17 +38,20 @@
       </Slide>
     </Carousel>
     <div class="hider" />
+    <PizzaSliceIcon class="pizza-slice-icon" />
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel';
+import PizzaSliceIcon from '@/components/PizzaSliceIcon.vue';
 
 export default {
   name: 'PizzaMenuMain',
   components: {
     Carousel,
     Slide,
+    PizzaSliceIcon,
   },
   data() {
     return {
@@ -163,13 +166,19 @@ export default {
   }
 
   .hider {
-    width: 50px;
-    height: 25px;
+    width: 100px;
+    height: 40px;
     background-color: #ffffff;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    cursor: grab;
   }
 
+  .pizza-slice-icon {
+    position: absolute;
+    top: 30%;
+    right: 1rem;
+  }
 </style>
