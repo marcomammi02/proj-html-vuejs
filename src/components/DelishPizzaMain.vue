@@ -69,6 +69,13 @@
       >
       <PizzaSliceIcon class="pizza-slice-icon" />
       <PizzaSliceIcon class="pizza-slice-icon-two" />
+      <div class="cart-button">
+        <img
+          class="cart-icon"
+          src="@/svg/svg-9.svg"
+          alt=""
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -160,6 +167,20 @@ export default {
       position: absolute;
       bottom: 9rem;
       right: 1rem;
+    }
+
+    .cart-icon {
+      width: 20px;
+    }
+
+    .cart-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: fit-content;
+      padding: 5px 6px 0 6px;
+      background-color: #ffffff;
+      cursor: pointer;
     }
 
 </style>

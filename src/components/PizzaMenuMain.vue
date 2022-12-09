@@ -39,6 +39,13 @@
     </Carousel>
     <div class="hider" />
     <PizzaSliceIcon class="pizza-slice-icon" />
+    <div class="pink-button">
+      <img
+        class="circle"
+        src="@/svg/svg-10.svg"
+        alt=""
+      >
+    </div>
   </div>
 </template>
 
@@ -180,5 +187,18 @@ export default {
     position: absolute;
     top: 30%;
     right: 1rem;
+  }
+
+  .circle {
+    width: 25px;
+  }
+  .pink-button {
+    background-color: #ff5470;
+    width: fit-content;
+    padding: 5px 5px 0 3px;
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    cursor: pointer;
   }
 </style>
