@@ -9,6 +9,7 @@ import {
   faInstagram,
   faTwitter,
   faFacebookF,
+  faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faUser,
@@ -29,6 +30,7 @@ library.add(
   faUser,
   faCalendar,
   faClock,
+  faLinkedinIn,
 );
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
 Vue.use(VueCarousel);

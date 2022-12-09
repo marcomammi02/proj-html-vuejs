@@ -4,7 +4,7 @@
       <button>ORDER ONLINE</button>
       <ul>
         <li
-          v-for="(objMenu, i) in menuHeader"
+          v-for="(objMenu, i) in arrMenuHeader"
           :key="i"
         >
           <img
@@ -53,17 +53,8 @@ export default {
   components: {
     CarouselHeader,
   },
-  data() {
-    return {
-      menuHeader: [
-        'home',
-        'pages',
-        'menu',
-        'event',
-        'blog',
-        'landing',
-      ],
-    };
+  props: {
+    arrMenuHeader: Array,
   },
 };
 </script>
